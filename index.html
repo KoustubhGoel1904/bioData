@@ -9,6 +9,7 @@ table, th, td {
   text-align: left;
   width: auto;
   font-size: auto;
+  border-collapse: collapse;
 }
 
 .flex-container {
@@ -137,6 +138,19 @@ img {vertical-align: middle;  width: 100%;  height: auto;}
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+/* Adjust font size for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  td {
+    font-size: 14px; /* Reduce font size for smaller screens */
+  }
+}
+
+/* Further adjust font size for screens smaller than 480px */
+@media screen and (max-width: 480px) {
+  td {
+    font-size: 12px;
+  }
+}	
 </style>
 </head>
 <body>
