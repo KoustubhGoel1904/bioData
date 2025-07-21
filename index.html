@@ -7,7 +7,7 @@
 table, th, td {
   border:1px solid black;
   text-align: left;
-  width: 100%;	
+  width: auto;	
 }
 
 .flex-container {
@@ -138,13 +138,13 @@ img {vertical-align: middle;  width: 100%;  height: auto;}
 <body>
 
 <div class="flex-container">
-  <div style="order: 4">
-  	<div class="flex-container1">
-  		<div style="flex-grow: 1 "> <img src=""></div>
-  		<div style="flex-grow: 8"> <h2>Koustubh Goel </h2> </div>
-  		<div style="flex-grow: 1"><img src=""></div>  
+	<div style="order: 4">
+		<div class="flex-container1">
+			<div style="flex-grow: 1 "> <img src=""></div>
+			<div style="flex-grow: 8"> <h2>Koustubh Goel </h2> </div>
+			<div style="flex-grow: 1"><img src=""></div>  
+		</div>
 	</div>
-  </div>
   
   
 	<div style="order: 3">  
@@ -190,7 +190,10 @@ img {vertical-align: middle;  width: 100%;  height: auto;}
 		</table>
   
 	</div>  
-	<div class="slideshow-container";style="order: 2" >
+
+
+	<div style="order: 2">  
+	<div class="slideshow-container"; >
 
 
 		<div class="mySlides fade">  <div class="numbertext">1 </div>  <img src="https://raw.githubusercontent.com/KoustubhGoel1904/bioData/main/1.jpeg" >  <div class="text"> 1 </div> </div>
@@ -207,21 +210,21 @@ img {vertical-align: middle;  width: 100%;  height: auto;}
 		<a class="next" onclick="plusSlides(1)"> next ❯❯ </a>
 
 	</div>
-	<br>
-
-<div style="text-align:center; order: 1">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-  <span class="dot" onclick="currentSlide(4)"></span> 
-  <span class="dot" onclick="currentSlide(5)"></span> 
-  <span class="dot" onclick="currentSlide(6)"></span> 
-  <span class="dot" onclick="currentSlide(7)"></span> 
-  <span class="dot" onclick="currentSlide(8)"></span> 
-  <span class="dot" onclick="currentSlide(9)"></span> 
+	</div>
 	
-</div>
-
+	<div style="order: 1">  
+	<div style="text-align:center; ">
+		  <span class="dot" onclick="currentSlide(1)"></span> 
+		  <span class="dot" onclick="currentSlide(2)"></span> 
+		  <span class="dot" onclick="currentSlide(3)"></span> 
+		  <span class="dot" onclick="currentSlide(4)"></span> 
+		  <span class="dot" onclick="currentSlide(5)"></span> 
+		  <span class="dot" onclick="currentSlide(6)"></span> 
+		  <span class="dot" onclick="currentSlide(7)"></span> 
+		  <span class="dot" onclick="currentSlide(8)"></span> 
+		  <span class="dot" onclick="currentSlide(9)"></span> 
+	</div>
+	</div>
 </div>
 
 <script >
