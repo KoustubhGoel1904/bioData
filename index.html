@@ -81,6 +81,10 @@ img {vertical-align: middle;  width: 100%;  height: auto;}
   border-radius: 3px 0 0 3px;
 }
 
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
 
 /* Caption text */
 .text {
@@ -129,18 +133,6 @@ img {vertical-align: middle;  width: 100%;  height: auto;}
   to {opacity: 1}
 }
 
-@media screen and (max-width: 1920px) {
-    img {
-        max-height: 80vh; /* Adjust max height for smaller screens */
-    }
-}
-
-/* For very narrow screens (e.g., phones) */
-@media screen and (max-width: 1080px) {
-    img {
-        max-height: 80vh; /* Let height be fully auto on phones or define a specific value */
-        /* Or set a different max-height like max-height: 40vh; if needed */
-    }
 </style>
 </head>
 <body>
